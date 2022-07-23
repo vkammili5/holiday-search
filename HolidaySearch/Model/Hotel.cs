@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace HolidaySearch.Model
 {
-    internal class Hotel
+    public class Hotel
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public DateTime Arrival_Date { get; set; }
+        public double Price_Per_Night { get; set; }
+        public List<string> Local_Airports { get; set; }
+        public int Nights { get; set; }
     }
 }

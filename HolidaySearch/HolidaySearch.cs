@@ -17,6 +17,12 @@ namespace HolidaySearch
             return dbContext.Flights;
 
         }
+
+        public List<Hotel> GetHotelData()
+        {
+            var dbContext = new OnTheBeachDbContext();
+            return dbContext.Hotels;
+        }
         
     }
 }
