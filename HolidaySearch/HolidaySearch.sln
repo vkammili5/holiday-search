@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidaySearch", "HolidaySearch.csproj", "{AE7744DA-8F30-4936-9153-2AF0599F1598}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidaySearchTests", "..\HolidaySearchTests\HolidaySearchTests.csproj", "{13683C34-5473-4596-8A92-0B7B9855E2C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AE7744DA-8F30-4936-9153-2AF0599F1598}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE7744DA-8F30-4936-9153-2AF0599F1598}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE7744DA-8F30-4936-9153-2AF0599F1598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13683C34-5473-4596-8A92-0B7B9855E2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13683C34-5473-4596-8A92-0B7B9855E2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13683C34-5473-4596-8A92-0B7B9855E2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13683C34-5473-4596-8A92-0B7B9855E2C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
