@@ -2,6 +2,8 @@ namespace HolidaySearchTests
 {
     public class HolidaySearchUnitTests
     {
+        private HolidaySearch holidaySearch;
+
         [SetUp]
         public void Setup()
         {
