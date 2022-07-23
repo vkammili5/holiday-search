@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using HolidaySearch.Model;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace HolidaySearch.Data
         public OnTheBeachDbContext()
         {
             Flights = new List<Flight>();
+            Hotels = new List<Hotel>();
             
             LoadJsonData();
         }
@@ -27,10 +29,17 @@ namespace HolidaySearch.Data
             {
                 string flightData = streamReader.ReadToEnd();
                 Flights.AddRange(JsonConvert.DeserializeObject<List<Flight>>(flightData));
-
             }
+            using (streamReader = new StreamReader(String.Format("{0}{1}", path, "HotelData.json")))
+            {
+                string hotelData = streamReader.ReadToEnd();
+                Hotels.AddRange(JsonConvert.DeserializeObject<List<Hotel>>(hotelData));
+            }
+
         }
         public List<Flight> Flights { get; set; }
+
+        public List<Hotel> Hotels { get; set; }
 
     }
 }
