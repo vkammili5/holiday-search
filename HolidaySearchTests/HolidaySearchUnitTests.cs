@@ -130,6 +130,19 @@ namespace HolidaySearchTests
             Assert.IsTrue(results.Hotels.Id == 6, "Hotel Id is not 6 for test 3");
         }
 
+        [Test]
+        public void HolidaySearch_Test_GetListOfFlightsAndHotels()
+        {
+            holidaySearch = new HolidaySearch("ANY", "ANY", "ANY", "ANY");
+
+            var results = holidaySearch.GetListOfFlightsAndHotels();
+
+            Assert.IsNotNull(results, "Holiday search results are empty for test 4");
+
+            Assert.IsNotNull(results.Item1, "Holiday search flight results are empty for test 4");
+
+            Assert.IsNotNull(results.Item2, "Holiday search hotel results are empty for test 4");
+        }
 
 
     }
