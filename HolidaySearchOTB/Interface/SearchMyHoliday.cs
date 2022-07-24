@@ -16,7 +16,6 @@ namespace HolidaySearchOTB.Interface
         public string duration { get; set; }
         public OnTheBeachDbContext dbContext { get; set; }
 
-
         public SearchMyHoliday(string DepartingFrom, string TravelingTo, string DepartureDate, string Duration)
         {
             departingFrom = DepartingFrom;

@@ -14,5 +14,6 @@ namespace HolidaySearchOTB.Model
         public double Price_Per_Night { get; set; }
         public List<string> Local_Airports { get; set; }
         public int Nights { get; set; }
+
     }
 }
