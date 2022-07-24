@@ -39,11 +39,18 @@ namespace HolidaySearchOTB
             flights.AddRange(dbContext.Flights);
             hotels.AddRange(dbContext.Hotels);
 
-            if(departingFrom.ToLower() != "any")
+            if (departingFrom.ToLower() != "any")
             {
-                flights = flights.Where(p => p.From == departingFrom).ToList();
+                if (departingFrom.ToLower() == "any london")
+                {
+                    flights = flights.Where(p => p.From == "LGW" || p.From == "LTN").ToList();
+                }
+                else
+                {
+                    flights = flights.Where(p => p.From == departingFrom).ToList();
+                }
             }
-
+                      
             if (travelingTo.ToLower() != "any")
             {
                 flights = flights.Where(p => p.To == travelingTo).ToList();

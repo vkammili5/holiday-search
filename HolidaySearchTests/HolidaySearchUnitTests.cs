@@ -11,7 +11,7 @@ namespace HolidaySearchTests
         {
             //holidaySearch = new HolidaySearch();
         }
-
+        
         [Test]
         public void IsHolidaySearch_GetFlightData_NotEmpty_Return_True()
         {
@@ -89,7 +89,7 @@ namespace HolidaySearchTests
             Assert.IsTrue(results.Flights.Id == 2, "Flight Id is not 2 for test 1");
             Assert.IsTrue(results.Hotels.Id == 9, "Hotel Id is not 9 for test 1");
         }
-
+        
         [Test]
         public void HolidaySearch_Results_Test2_Multiple_Assertions()
         {
@@ -143,6 +143,27 @@ namespace HolidaySearchTests
 
             Assert.IsNotNull(results.Item2, "Holiday search hotel results are empty for test 4");
         }
+        
+        [Test]
+        public void HolidaySearch_Results_Test4_Multiple_Assertions()
+        {
+            holidaySearch = new HolidaySearch("ANY LONDON", "PMI", "2023-06-15", "14");
+
+            var results = holidaySearch.Results();
+
+            Assert.IsNotNull(results, "Holiday search results are empty for test 4");
+
+            Assert.IsNotNull(results.Flights, "Holiday search flight results are empty for test 4");
+
+            Assert.IsNotNull(results.Hotels, "Holiday search hotel results are empty for test 4");
+
+            Assert.NotZero(results.TotalPrice, "Holiday search results total price is 0 for test 4");
+
+            Assert.IsTrue(results.Flights.Id == 6, "Flight Id is not 6 for test 4");
+
+            Assert.IsTrue(results.Hotels.Id == 3, "Hotel Id is not 3 for test 4");
+        }
+
 
 
     }
