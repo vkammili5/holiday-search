@@ -47,7 +47,21 @@ namespace HolidaySearchTests
             Assert.IsNotNull(hotelData, "Hotel Data is null");
         }
 
-        
+        [Test]
+        public void IsHolidaySearch_Results_IsEmpty_Return_True()
+        {
+            holidaySearch = new HolidaySearch("ABC", "EFG", "2023/07/01", "7");
+
+            var results = holidaySearch.Results();
+
+            Assert.IsNotNull(results, "Holiday search results are null");
+
+            Assert.IsNull(results.Flights, "Holiday search flight results are not null");
+
+            Assert.IsNull(results.Hotels, "Holiday search hotel results are not null");
+        }
+
+
 
     }
 }
