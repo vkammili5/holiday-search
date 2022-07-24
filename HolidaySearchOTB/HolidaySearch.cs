@@ -73,5 +73,28 @@ namespace HolidaySearchOTB
         {
             return flightPrice + (hotelPrice * noOfNights);
         }
+
+        public override HolidaySearchModel Results()
+        {
+            HolidaySearchModel results = new HolidaySearchModel();
+            if(dbContext.Flights != null && dbContext.Hotels != null)
+            {
+                var flightsAndHotels = GetListOfFlightsAndHotels();
+
+                if(flightsAndHotels != null)
+                {
+                    results.Flights = flightsAndHotels.Item1 != null ? flightsAndHotels.Item1.FirstOrDefault() : null;
+
+                    
+                    results.Hotels = flightsAndHotels.Item2?.FirstOrDefault();
+
+                }
+                if (results.Flights != null && results.Hotels != null)
+                {
+                    results.TotalPrice = CalculateTotalPrice(results.Flights.Price, results.Hotels.Price_Per_Night, results.Hotels.Nights);
+                }
+            }
+            return results;
+        }
     }
 }
