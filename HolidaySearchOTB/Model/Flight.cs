@@ -13,6 +13,6 @@ namespace HolidaySearchOTB.Model
         public string From { get; set; }
         public string To { get; set; }
         public double Price { get; set; }
-        public DateTime Departure_Date { get; set; }
+        public string Departure_Date { get; set; }
     }
 }
