@@ -86,8 +86,8 @@ namespace HolidaySearchTests
 
             Assert.NotZero(results.TotalPrice, "Holiday search results total price is 0 for test 1");
 
-            Assert.IsTrue(results.Flights.Id == 2, "Flight Id is not 6 for test 1");
-            Assert.IsTrue(results.Hotels.Id == 9, "Hotel Id is not 5 for test 1");
+            Assert.IsTrue(results.Flights.Id == 2, "Flight Id is not 2 for test 1");
+            Assert.IsTrue(results.Hotels.Id == 9, "Hotel Id is not 9 for test 1");
         }
     }
 }
