@@ -9,7 +9,7 @@ namespace HolidaySearchTests
         [SetUp]
         public void SetUp()
         {
-            //holidaySearch = new HolidaySearch();
+
         }
         
         [Test]
@@ -163,8 +163,5 @@ namespace HolidaySearchTests
 
             Assert.IsTrue(results.Hotels.Id == 3, "Hotel Id is not 3 for test 4");
         }
-
-
-
     }
 }

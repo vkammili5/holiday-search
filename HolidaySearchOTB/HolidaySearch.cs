@@ -15,19 +15,14 @@ namespace HolidaySearchOTB
             base(DepartingFrom, TravelingTo, DepartureDate, Duration)
         {
         }
-
-        
+             
         public List<Flight> GetFlightData()
         {
-            //var dbContext = new OnTheBeachDbContext();
-
-            return dbContext.Flights;
+              return dbContext.Flights;
         }
 
         public List<Hotel> GetHotelData()
         {
-            //var dbContext = new OnTheBeachDbContext();
-
             return dbContext.Hotels;
         }
 
@@ -72,7 +67,6 @@ namespace HolidaySearchOTB
             hotels = hotels.OrderBy(p => p.Price_Per_Night).ToList();
 
             return Tuple.Create(flights, hotels);
-
 
         }
 
