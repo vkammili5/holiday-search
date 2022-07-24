@@ -68,5 +68,10 @@ namespace HolidaySearchOTB
 
 
         }
+
+        public override double CalculateTotalPrice(double flightPrice, double hotelPrice, int noOfNights)
+        {
+            return flightPrice + (hotelPrice * noOfNights);
+        }
     }
 }
