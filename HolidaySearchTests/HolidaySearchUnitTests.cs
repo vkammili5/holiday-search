@@ -89,5 +89,48 @@ namespace HolidaySearchTests
             Assert.IsTrue(results.Flights.Id == 2, "Flight Id is not 2 for test 1");
             Assert.IsTrue(results.Hotels.Id == 9, "Hotel Id is not 9 for test 1");
         }
+
+        [Test]
+        public void HolidaySearch_Results_Test2_Multiple_Assertions()
+        {
+            holidaySearch = new HolidaySearch("ANY", "PMI", "2023-06-15", "10");
+
+            var results = holidaySearch.Results();
+
+            Assert.IsNotNull(results, "Holiday search results are empty for test 2");
+
+            Assert.IsNotNull(results.Flights, "Holiday search flight results are empty for test 2");
+
+            Assert.IsNotNull(results.Hotels, "Holiday search hotel results are empty for test 2");
+
+            Assert.NotZero(results.TotalPrice, "Holiday search results total price is 0 for test 2");
+
+            Assert.IsTrue(results.Flights.Id == 6, "Flight Id is not 6 for test 2");
+
+            Assert.IsTrue(results.Hotels.Id == 5, "Hotel Id is not 5 for test 2");
+        }
+
+        [Test]
+        public void HolidaySearch_Results_Test3_Multiple_Assertions()
+        {
+            holidaySearch = new HolidaySearch("ANY", "LPA", "2022-11-10", "14");
+
+            var results = holidaySearch.Results();
+
+            Assert.IsNotNull(results, "Holiday search results are empty for test 3");
+
+            Assert.IsNotNull(results.Flights, "Holiday search flight results are empty for test 3");
+
+            Assert.IsNotNull(results.Hotels, "Holiday search hotel results are empty for test 3");
+
+            Assert.NotZero(results.TotalPrice, "Holiday search results total price is 0 for test 3");
+
+            Assert.IsTrue(results.Flights.Id == 7, "Flight Id is not 7 for test 3");
+
+            Assert.IsTrue(results.Hotels.Id == 6, "Hotel Id is not 6 for test 3");
+        }
+
+
+
     }
 }
