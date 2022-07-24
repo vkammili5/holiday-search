@@ -1,4 +1,5 @@
 ﻿using HolidaySearchOTB.Data;
+using HolidaySearchOTB.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,7 @@ namespace HolidaySearchOTB.Interface
             dbContext = new OnTheBeachDbContext();
         }
 
+        public abstract HolidaySearchModel Results();
         public abstract double CalculateTotalPrice(double flightPrice, double hotelPrice, int noOfNights);
 
     }
