@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidaySearchOTB", "HolidaySearchOTB.csproj", "{0CE7FEE4-2B6D-41CA-8C1A-D673B87DB0FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidaySearchTests", "..\HolidaySearchTests\HolidaySearchTests.csproj", "{5CBDCD51-FE9B-4DB1-9D4C-1950EDDA8CE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CE7FEE4-2B6D-41CA-8C1A-D673B87DB0FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE7FEE4-2B6D-41CA-8C1A-D673B87DB0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE7FEE4-2B6D-41CA-8C1A-D673B87DB0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE7FEE4-2B6D-41CA-8C1A-D673B87DB0FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CBDCD51-FE9B-4DB1-9D4C-1950EDDA8CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CBDCD51-FE9B-4DB1-9D4C-1950EDDA8CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CBDCD51-FE9B-4DB1-9D4C-1950EDDA8CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CBDCD51-FE9B-4DB1-9D4C-1950EDDA8CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DB3F259-B7FA-4D82-BC1D-D730818778A7}
+	EndGlobalSection
+EndGlobal

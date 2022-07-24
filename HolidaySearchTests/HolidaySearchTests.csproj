@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HolidaySearch\HolidaySearchOTB.csproj" />
+    <ProjectReference Include="..\HolidaySearchOTB\HolidaySearchOTB.csproj" />
   </ItemGroup>
 
 </Project>

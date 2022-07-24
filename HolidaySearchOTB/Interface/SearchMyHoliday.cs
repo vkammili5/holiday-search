@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HolidaySearch.Interface
+namespace HolidaySearchOTB.Interface
 {
     public abstract class SearchMyHoliday
     {
@@ -12,6 +12,7 @@ namespace HolidaySearch.Interface
         private string travelingTo { get; set; }
         private string departureDate { get; set; }
         private int duration { get; set; }
+
         
         public SearchMyHoliday(string DepartingFrom, string TravelingTo, string DepartureDate, int Duration)
         {
