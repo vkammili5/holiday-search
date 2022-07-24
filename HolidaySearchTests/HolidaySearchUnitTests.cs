@@ -110,5 +110,27 @@ namespace HolidaySearchTests
             Assert.IsTrue(results.Hotels.Id == 5, "Hotel Id is not 5 for test 2");
         }
 
+        [Test]
+        public void HolidaySearch_Results_Test3_Multiple_Assertions()
+        {
+            holidaySearch = new HolidaySearch("ANY", "LPA", "2022-11-10", "14");
+
+            var results = holidaySearch.Results();
+
+            Assert.IsNotNull(results, "Holiday search results are empty for test 3");
+
+            Assert.IsNotNull(results.Flights, "Holiday search flight results are empty for test 3");
+
+            Assert.IsNotNull(results.Hotels, "Holiday search hotel results are empty for test 3");
+
+            Assert.NotZero(results.TotalPrice, "Holiday search results total price is 0 for test 3");
+
+            Assert.IsTrue(results.Flights.Id == 7, "Flight Id is not 7 for test 3");
+
+            Assert.IsTrue(results.Hotels.Id == 6, "Hotel Id is not 6 for test 3");
+        }
+
+
+
     }
 }
