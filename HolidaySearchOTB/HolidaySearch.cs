@@ -11,7 +11,7 @@ namespace HolidaySearchOTB
 {
     public class HolidaySearch : SearchMyHoliday
     {
-        public HolidaySearch(string DepartingFrom = null, string TravelingTo = null, string DepartureDate = null, int Duration = 0) :
+        public HolidaySearch(string DepartingFrom, string TravelingTo, string DepartureDate, int Duration) :
             base(DepartingFrom, TravelingTo, DepartureDate, Duration)
         {
         }
