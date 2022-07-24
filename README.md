@@ -23,6 +23,8 @@ The main goal of the project is to get the best value of flights and hotels for 
 1) The `HolidaySearchOTB` folder contains the solution to the project.
 2) The `HolidaySearchUnitTests` folder contains the unit tests for the solution.
 
+Taking the two JSON files of flights and hotels as source data, created a small library of code that provides a basic holiday search feature. The first search result should be the best value holiday we can provide, based on the customers requirements is what the project is about.
+
 ## 🏁 Getting Started <a name = "getting_started"></a>
 These instructions will get you a copy of the project up and running on your local machine.
 
