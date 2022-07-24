@@ -10,3 +10,6 @@
 <p align="center"> The project is all about the best value holiday search experience for customers.
     <br> 
 </p>
+
+## 📝 Table of Contents
+- [Introduction](#introduction)
