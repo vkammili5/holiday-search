@@ -10,7 +10,7 @@ namespace HolidaySearchOTB.Model
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public DateTime Arrival_Date { get; set; }
+        public string Arrival_Date { get; set; }
         public double Price_Per_Night { get; set; }
         public List<string> Local_Airports { get; set; }
         public int Nights { get; set; }
