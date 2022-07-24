@@ -25,6 +25,7 @@ namespace HolidaySearchOTB.Interface
             dbContext = new OnTheBeachDbContext();
         }
 
-       
+        public abstract double CalculateTotalPrice(double flightPrice, double hotelPrice, int noOfNights);
+
     }
 }
