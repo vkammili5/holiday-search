@@ -13,6 +13,8 @@
 
 ## 📝 Table of Contents
 - [Introduction](#introduction)
+- [Getting Started](#getting_started)
+- [Built Using](#built_using)
 
 
 ## 🧐 Introduction <a name = "introduction"></a>
@@ -20,6 +22,23 @@ The main goal of the project is to get the best value of flights and hotels for 
 
 1) The `HolidaySearchOTB` folder contains the solution to the project.
 2) The `HolidaySearchUnitTests` folder contains the unit tests for the solution.
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+These instructions will get you a copy of the project up and running on your local machine.
+
+### Prerequisites
+The machine running the above application should have .Net 6.0 installed and then clone the repository, then run the following command :
+
+```
+dotnet run
+```
+## ⛏️ Built Using <a name = "built_using"></a>
+- [Visual Studio](https://visualstudio.microsoft.com/) - Visual Studio
+- [.Net Framework](https://dotnet.microsoft.com/) - .Net Framework
+
+## ✍️ Author <a name = "author"></a>
+- [@vkammili5](https://github.com/vkammili5) 
+
 
 
 
