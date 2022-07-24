@@ -13,3 +13,14 @@
 
 ## 📝 Table of Contents
 - [Introduction](#introduction)
+
+
+## 🧐 Introduction <a name = "introduction"></a>
+The main goal of the project is to get the best value of flights and hotels for the user search. Here there are 2 folders : 
+
+1) The `HolidaySearchOTB` folder contains the solution to the project.
+2) The `HolidaySearchUnitTests` folder contains the unit tests for the solution.
+
+
+
+
